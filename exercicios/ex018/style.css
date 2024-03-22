@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+h1 {
+    font-family:'Kaushan Script' , sans-serif;
+    font-size: 4em;
+}
+
+p {
+    font-family:'work sans',sans-serif;
+}

@@ -1,0 +1,11 @@
+@font-face {
+    font-family: 'grind';
+    src: url(GrindAndDeath_Demo.ttf) format(truetype);
+    font-weight: normal;
+    font-style: normal;
+}
+
+h1 {
+    font-family: 'grind';
+    font-size: 3em;
+}

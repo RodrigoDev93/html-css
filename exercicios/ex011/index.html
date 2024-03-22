@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens adaptativas</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador</p>
+
+    <picture>
+        <source media="(max-width:740px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width:1050px )" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Imagem flexivel">
+    </picture>
+    <h1>Reproduzindo áudio</h1>
+    <p>Vamos aprender a reproduzir audio em HTML 5</p>
+    <!--MP3 WAV OGG-->
+    <audio preload="metadata" autoplay controls loop>
+        <source src="midia/letsgo-.mp3" type="audio/mpeg">
+        <source src="midia/letsgo-4.ogg" type="audio/ogg">
+        <source src="midia/letsgo-4.wav" type="audio/wav">
+        <p>Infelizmente seu navagador não consegue reproduzir audio
+            <a href="midia/letsgo-4.mp3">Clique aqui para baixar o Arquivo</a>
+        </p>
+    </audio>
+    <!--Seguindo a regra, ele começa a carregar o arquivo de audio de baixo pra cima, até o arquivo ser compativel com op navegador-->
+
+    <!--Arquivo de audio WAV muito pesado, arquivo MP3 mais leve e comprimido e recomendado para o site-->
+
+</body>
+</html>
