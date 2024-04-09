@@ -12,6 +12,7 @@
         table {
             width:500px;
             border-collapse: collapse;
+            position: relative;
         }
 
         caption {
@@ -29,6 +30,17 @@
         thead,tfoot{
             background-color: gray;
             color:white;
+        }
+
+        thead > tr > th {
+            position:sticky;
+            top:-1;
+            background-color:#383838;
+            /*Para descer o cabecalho fixo, em barra de rolagem*/
+        }
+
+        tbody > tr:nth-child(odd) /*ou even*/ {
+            background-color:lightgray
         }
 
         td.num {
@@ -104,7 +116,7 @@
         <tfoot>
             <tr>
                 <th scope="row">Total de Habitantes</th>
-                <td class="num"><strong>#########</strong></td>
+                <td class="num"><strong>153.955.509</strong></td>
             </tr>
         </tfoot>
     </table>
